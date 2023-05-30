@@ -1,6 +1,8 @@
 package Controller;
 
-//import Exceptions.*;
+
+
+import Exeption.UncorrectDataException;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -21,21 +23,21 @@ public class Validator {
                 if (i==1)
                     isValidDate (data[i]);
 
-            } catch (Exceptions.UncorrectDataException e){
+            } catch (UncorrectDataException e){
                 sb.append ("\n");
                 sb.append(e.getMessage());
                 flag = false;
             }
         }
         if (flag == false){
-            throw new Exceptions.UncorrectDataException(sb.toString());
+            throw new UncorrectDataException(sb.toString());
         }
     }
 
     private boolean isValidName (String name){
         for (int i = 0; i < name.length(); i++) {
             if (! Character.UnicodeBlock.of(name.charAt(i)).equals(Character.UnicodeBlock.CYRILLIC)) {
-                throw new Exceptions.UncorrectDataException(String.format("некорректно задано имя, допустимы только буквы кириллицы"));
+                throw new UncorrectDataException(String.format("некорректно задано имя, допустимы только буквы кириллицы"));
             }
         }
         return true;
@@ -53,14 +55,14 @@ public class Validator {
             day = date.getDayOfMonth();
 
         } catch (DateTimeParseException e) {
-            throw new Exceptions.UncorrectDataException("некорректный формат даты");
+            throw new UncorrectDataException("некорректный формат даты");
         }
 
         if ((Arrays.asList(month_30).contains(date.getMonthValue()) && day > 30) ||
                 (date.isLeapYear() && date.getMonthValue() == 2 && day > 29) ||
                 (!date.isLeapYear() && date.getMonthValue() == 2 && day > 28)) {
 
-            throw new Exceptions.UncorrectDataException("введена некорректная дата рождения");
+            throw new UncorrectDataException("введена некорректная дата рождения");
 
         } else
             return true;
