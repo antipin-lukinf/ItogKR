@@ -26,6 +26,7 @@ public class PetRepository implements IRepository<Pet> {
     @Override
     public List<Pet> getAll() {
         List<Pet> farm = new ArrayList<Pet>();
+        //popo
         Pet pet;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
