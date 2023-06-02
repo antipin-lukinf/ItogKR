@@ -90,7 +90,7 @@ public class PetRepository implements IRepository<Pet> {
             Class.forName("com.mysql.cj.jdbc.Driver");
             try (Connection dbConnection = getConnection()) {
 
-                SQLstr = "INSERT INTO pet_list (PetName, Birthday, GenusId) SELECT ?, ?, (SELECT Id FROM pet_types WHERE Genus_name = ?)";
+                SQLstr = "INSERT INTO pet_list (PetName, Birthday, GenusId) SELECT ?, ?, ?";
                 PreparedStatement prepSt = dbConnection.prepareStatement(SQLstr);
                 prepSt.setString(1, pet.getName());
                 prepSt.setDate(2, Date.valueOf(pet.getBirthdayDate()));
@@ -190,7 +190,7 @@ public class PetRepository implements IRepository<Pet> {
     public static Connection getConnection() throws SQLException, IOException {
 
         Properties props = new Properties();
-        try (FileInputStream fis = new FileInputStream("src/Resources/database.properties")) {
+        try (FileInputStream fis = new FileInputStream("src/main/java/Resources/database.properties")) {
 
             props.load(fis);
             String url = props.getProperty("url");

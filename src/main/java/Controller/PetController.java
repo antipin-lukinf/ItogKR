@@ -24,7 +24,7 @@ public class PetController {
     public void createPet(PetType type) {
 
         String[] data = new String[] { view.getName(), view.getBirthday() };
-        validator.validate(data);
+//        validator.validate(data);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         LocalDate birthday = LocalDate.parse(data[1], formatter);
         try {

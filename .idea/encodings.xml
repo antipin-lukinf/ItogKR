@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="windows-1251" addBOMForNewFiles="with BOM">
-    <file url="file://$PROJECT_DIR$/src/Controller/Counter.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/Controller/PetController.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/Controller/Validator.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/Exeption/UncorrectDataException.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/Model/Cat.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/Model/Creator.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/Model/Dog.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/Model/Hamster.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/Model/Pet.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/Model/PetCreator.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/Model/PetType.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/Program.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/Services/IRepository.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/Services/PetRepository.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/UserInterface/ConsoleMenu.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/UserInterface/ConsoleView.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/UserInterface/View.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Controller/Counter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Controller/PetController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Controller/Validator.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Exeption/UncorrectDataException.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Model/Cat.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Model/Creator.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Model/Dog.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Model/Hamster.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Model/Pet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Model/PetCreator.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Model/PetType.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Program.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Program.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Services/IRepository.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Services/PetRepository.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/UserInterface/ConsoleMenu.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/UserInterface/ConsoleView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/UserInterface/View.java" charset="UTF-8" />
     <file url="PROJECT" charset="windows-1251" />
   </component>
 </project>
